@@ -6,7 +6,7 @@ This project focuses on analyzing player engagement, gameplay activity, retentio
 
 The goal of the analysis was to better understand player behavior, identify engagement trends, monitor operational KPIs, and support data driven product and marketing decisions using analytics dashboards and reporting tools.
 
-The project combines gameplay analytics, operational reporting, visualization, and performance tracking using Python, SQL, Excel, and Power BI.
+The project combines gameplay analytics, operational reporting, visualization, and performance tracking using Python, SQL, Excel.
 
 ---
 
