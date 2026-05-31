@@ -1,178 +1,122 @@
-# Mobile Game Analytics Report
+# Mobile Game Analytics — Player Engagement & Retention Analysis
 
 ## Project Overview
 
-This project focuses on analyzing player engagement, gameplay activity, retention trends, and monetization performance for mobile games published on iOS and Android platforms.
+End-to-end analytics project analyzing one full year of mobile game 
+player data across 92 countries. The analysis focuses on player 
+engagement, retention behavior, geographic distribution, and 
+stickiness metrics to support data-driven product decisions.
 
-The goal of the analysis was to better understand player behavior, identify engagement trends, monitor operational KPIs, and support data driven product and marketing decisions using analytics dashboards and reporting tools.
-
-The project combines gameplay analytics, operational reporting, visualization, and performance tracking using Python, SQL, Excel.
-
----
-
-# Objectives
-
-- Analyze player engagement and gameplay trends
-- Track retention and user participation metrics
-- Monitor monetization and operational KPIs
-- Build dashboards and visual reports
-- Identify gameplay patterns and player drop off points
-- Support product improvement decisions using analytics
+Built to demonstrate real-world game analytics skills using 
+Python, SQL, and data visualization.
 
 ---
 
-# Tools & Technologies
+## Dataset
 
-## Analytics & Reporting
-- Power BI
-- Microsoft Excel
-- SQL
-- Python
-- Pandas
+4 structured CSV files covering 1 full year of game telemetry:
 
-## Game Analytics Platforms
-- GameAnalytics
-- Unity Analytics
-- App Store Connect
-- Google Play Console
-
-## Data Handling
-- CSV datasets
-- JSON analytics logs
-- Structured gameplay event data
+| File | Rows | Description |
+|---|---|---|
+| country_demographics.csv | 92 | One row per country — active users, engagement rate, events |
+| Engagement.csv | 848 | Weekly and daily active user metrics, DAU/MAU/WAU ratios |
+| Retention.csv | 987 | Cohort retention rates — Day 1, Day 7, Day 30 |
+| User_Behavior.csv | 1,916 | Daily session behavior, returning vs new users |
 
 ---
 
-# Data Collection & Processing
+## Key Findings
 
-The project involved collecting gameplay and operational data from multiple analytics sources, including mobile platform analytics tools and gameplay tracking systems.
+### Geographic Distribution
+- **92 countries** represented in the player base
+- **United States** is the largest market — 1,106 active users, 86.2% engagement rate
+- Top 5 countries: US, Australia, Canada, United Kingdom, Netherlands
+- US concentration accounts for **58.7% of all active users** — geographic 
+  over-reliance risk flagged
 
-## Data preparation tasks included:
-- Cleaning incomplete records
-- Validating event tracking
-- Handling missing values
-- Organizing gameplay logs
-- Transforming structured datasets
-- Preparing KPI reporting tables
+### Engagement & Stickiness
+- Mean **DAU/MAU ratio: 0.063** — flagged RED against industry benchmark of 0.20+
+- Players are acquiring but not returning daily — core engagement loop needs 
+  strengthening
+- Weekly active user trends tracked across 53 weeks showing seasonal patterns
 
-## SQL queries and Python scripts were used for:
-- Filtering datasets
-- Aggregation
-- Trend analysis
-- KPI calculations
-- Player activity tracking
+### Retention Analysis
+- Cohort retention tracked at **Day 1, Day 7, and Day 30** per acquisition cohort
+- Day 7 retention data available for all cohorts
+- Day 30 retention data sparse — only 19 cohorts had sufficient data for 
+  reliable measurement
+- Returning user percentage analyzed weekly — new vs. returning breakdown 
+  visualized across full year
 
----
-
-# Key Metrics Analyzed
-
-## Player Engagement Metrics
-- Daily Active Users (DAU)
-- Monthly Active Users (MAU)
-- Session activity
-- Gameplay participation
-- Average session duration
-
-## Retention Metrics
-- Day 1 retention
-- Day 7 retention
-- Returning player trends
-- User drop off analysis
-
-## Monetization Metrics
-- In app purchase activity
-- Revenue trends
-- Conversion related metrics
-- Engagement vs monetization patterns
-
-## Operational KPIs
-- Application performance tracking
-- Gameplay event tracking
-- Feature usage trends
-- Platform performance monitoring
+### Country Segmentation
+- Countries segmented into 4 quadrants: High Users / High Engagement, 
+  High Users / Low Engagement, Low Users / High Engagement, Low Users / 
+  Low Engagement
+- Identified hidden high-engagement markets with small but loyal player bases 
+  as growth opportunities
 
 ---
 
-# Dashboard Development
+## Tools & Technologies
 
-Interactive dashboards were created using Power BI and Excel to visualize gameplay performance and operational trends.
-
-## Dashboard features included:
-- Player engagement trends
-- Retention analysis
-- Gameplay activity charts
-- Monetization tracking
-- KPI summaries
-- Operational performance reports
-
-## Visualization techniques included:
-- Bar charts
-- Trend lines
-- KPI cards
-- Filters
-- Comparative reporting views
+| Tool | Purpose |
+|---|---|
+| Python (Pandas) | Data loading, cleaning, transformation, merging |
+| Python (Matplotlib, Seaborn) | Charts and visualizations |
+| SQL | KPI aggregation and filtering |
+| Jupyter Notebook | Analysis workflow and reporting |
 
 ---
 
-# Key Insights
+## Analysis Sections
 
-The analysis identified several important gameplay and engagement patterns:
-
-- Certain gameplay sessions showed higher user retention compared to others
-- Player activity increased during feature updates and content releases
-- Some gameplay events showed early user drop off patterns
-- Engagement and monetization trends were closely connected during high activity periods
-- Dashboard reporting improved visibility into gameplay and operational performance
-
----
-
-# Business Impact
-
-This project helped demonstrate how analytics can support:
-
-- Gameplay improvement decisions
-- Player retention strategies
-- Operational monitoring
-- Performance reporting
-- Marketing and ASO related analysis
-- Product optimization
-
-The project also improved reporting workflows by organizing gameplay and operational data into clear visual dashboards and reports.
+1. **Geographic Analysis** — Active users, engagement rate, and events per 
+   user by country
+2. **Engagement Trends** — DAU, WAU, MAU over 365 days; stickiness (DAU/MAU) 
+   ratio
+3. **Retention Analysis** — Cohort Day 1 / Day 7 / Day 30 retention rates; 
+   weekly returning user percentage
+4. **Growth vs Loyalty** — Weekly new users vs returning users; correlation 
+   between acquisition and retention
+5. **Country Segmentation** — 4-quadrant user base vs engagement analysis
+6. **Data Quality** — Validation checks, null handling, sparse data flags
 
 ---
 
-# Challenges Faced
+## Key Metrics Scorecard
 
-- Working with semi structured analytics data
-- Cleaning inconsistent gameplay logs
-- Aligning data from multiple analytics platforms
-- Managing missing values and duplicate records
-- Validating analytics tracking accuracy
-
----
-
-# Future Improvements
-
-Possible future improvements include:
-
-- Predictive analytics for retention forecasting
-- Automated ETL pipelines
-- Real time dashboard reporting
-- Player segmentation analysis
-- A/B testing dashboards
-- Machine learning based gameplay analysis
+| Metric | Value | Status |
+|---|---|---|
+| Mean DAU/MAU stickiness | 0.063 | RED — below benchmark |
+| US share of active users | 58.7% | AMBER — concentration risk |
+| Countries with engagement data | 92 | — |
+| Days of daily data | 365 | — |
+| Weeks of weekly data | 53 | — |
 
 ---
 
-# Conclusion
+## Business Recommendations
 
-This project demonstrates practical experience working with mobile game analytics, operational reporting, dashboard development, and data visualization. It highlights the use of analytics tools and structured datasets to support gameplay insights, performance monitoring, and business decisions in a mobile gaming environment.
+1. **Improve daily retention loop** — DAU/MAU of 0.063 indicates players 
+   are not returning daily. Investigate daily reward systems and push 
+   notification strategies.
+2. **Reduce geographic concentration risk** — 58.7% US dependency is 
+   a business risk. Target high-engagement smaller markets 
+   (Australia, Canada, Netherlands) for growth.
+3. **Investigate Day 7-to-Day 30 drop** — The gap between D7 and D30 
+   data suggests significant churn in weeks 2-4. Map this to 
+   specific in-game progression events.
+4. **Focus on high-engagement low-user markets** — Segmentation 
+   identified countries with strong engagement but small user bases — 
+   these are cost-effective growth targets.
 
 ---
 
-# Author
+
+---
+
+## Author
 
 Mohammed Shahwar Ahmed
-
+Data Analytics | Game Intelligence | SQL | Python | Power BI
 GitHub: https://github.com/shahwar-analytics
-```
