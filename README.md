@@ -1,4 +1,4 @@
-# Mobile Game Analytics — Player Engagement & Retention Analysis
+# Mobile Game Analytics - Player Engagement and Retention Analysis
 
 ## Project Overview
 
@@ -18,9 +18,9 @@ Python, SQL, and data visualization.
 
 | File | Rows | Description |
 |---|---|---|
-| country_demographics.csv | 92 | One row per country — active users, engagement rate, events |
+| country_demographics.csv | 92 | One row per country - active users, engagement rate, events |
 | Engagement.csv | 848 | Weekly and daily active user metrics, DAU/MAU/WAU ratios |
-| Retention.csv | 987 | Cohort retention rates — Day 1, Day 7, Day 30 |
+| Retention.csv | 987 | Cohort retention rates - Day 1, Day 7, Day 30 |
 | User_Behavior.csv | 1,916 | Daily session behavior, returning vs new users |
 
 ---
@@ -28,36 +28,29 @@ Python, SQL, and data visualization.
 ## Key Findings
 
 ### Geographic Distribution
-- **92 countries** represented in the player base
-- **United States** is the largest market — 1,106 active users, 86.2% engagement rate
+- 92 countries represented in the player base
+- United States is the largest market - 1,106 active users, 86.2% engagement rate
 - Top 5 countries: US, Australia, Canada, United Kingdom, Netherlands
-- US concentration accounts for **58.7% of all active users** — geographic 
-  over-reliance risk flagged
+- US concentration accounts for 58.7% of all active users - geographic over-reliance risk flagged
 
-### Engagement & Stickiness
-- Mean **DAU/MAU ratio: 0.063** — flagged RED against industry benchmark of 0.20+
-- Players are acquiring but not returning daily — core engagement loop needs 
-  strengthening
+### Engagement and Stickiness
+- Mean DAU/MAU ratio: 0.063 - flagged against industry benchmark of 0.20+
+- Players are acquiring but not returning daily - core engagement loop needs strengthening
 - Weekly active user trends tracked across 53 weeks showing seasonal patterns
 
 ### Retention Analysis
-- Cohort retention tracked at **Day 1, Day 7, and Day 30** per acquisition cohort
+- Cohort retention tracked at Day 1, Day 7, and Day 30 per acquisition cohort
 - Day 7 retention data available for all cohorts
-- Day 30 retention data sparse — only 19 cohorts had sufficient data for 
-  reliable measurement
-- Returning user percentage analyzed weekly — new vs. returning breakdown 
-  visualized across full year
+- Day 30 retention data sparse - only 19 cohorts had sufficient data for reliable measurement
+- Returning user percentage analyzed weekly - new vs returning breakdown visualized across full year
 
 ### Country Segmentation
-- Countries segmented into 4 quadrants: High Users / High Engagement, 
-  High Users / Low Engagement, Low Users / High Engagement, Low Users / 
-  Low Engagement
-- Identified hidden high-engagement markets with small but loyal player bases 
-  as growth opportunities
+- Countries segmented into 4 quadrants: High Users / High Engagement, High Users / Low Engagement, Low Users / High Engagement, Low Users / Low Engagement
+- Identified hidden high-engagement markets with small but loyal player bases as growth opportunities
 
 ---
 
-## Tools & Technologies
+## Tools and Technologies
 
 | Tool | Purpose |
 |---|---|
@@ -70,16 +63,12 @@ Python, SQL, and data visualization.
 
 ## Analysis Sections
 
-1. **Geographic Analysis** — Active users, engagement rate, and events per 
-   user by country
-2. **Engagement Trends** — DAU, WAU, MAU over 365 days; stickiness (DAU/MAU) 
-   ratio
-3. **Retention Analysis** — Cohort Day 1 / Day 7 / Day 30 retention rates; 
-   weekly returning user percentage
-4. **Growth vs Loyalty** — Weekly new users vs returning users; correlation 
-   between acquisition and retention
-5. **Country Segmentation** — 4-quadrant user base vs engagement analysis
-6. **Data Quality** — Validation checks, null handling, sparse data flags
+1. Geographic Analysis - Active users, engagement rate, and events per user by country
+2. Engagement Trends - DAU, WAU, MAU over 365 days; stickiness (DAU/MAU) ratio
+3. Retention Analysis - Cohort Day 1 / Day 7 / Day 30 retention rates; weekly returning user percentage
+4. Growth vs Loyalty - Weekly new users vs returning users; correlation between acquisition and retention
+5. Country Segmentation - 4-quadrant user base vs engagement analysis
+6. Data Quality - Validation checks, null handling, sparse data flags
 
 ---
 
@@ -87,31 +76,23 @@ Python, SQL, and data visualization.
 
 | Metric | Value | Status |
 |---|---|---|
-| Mean DAU/MAU stickiness | 0.063 | RED — below benchmark |
-| US share of active users | 58.7% | AMBER — concentration risk |
-| Countries with engagement data | 92 | — |
-| Days of daily data | 365 | — |
-| Weeks of weekly data | 53 | — |
+| Mean DAU/MAU stickiness | 0.063 | Below benchmark (0.20+) |
+| US share of active users | 58.7% | Concentration risk |
+| Countries with engagement data | 92 | Good |
+| Days of daily data | 365 | Full year |
+| Weeks of weekly data | 53 | Full year |
 
 ---
 
 ## Business Recommendations
 
-1. **Improve daily retention loop** — DAU/MAU of 0.063 indicates players 
-   are not returning daily. Investigate daily reward systems and push 
-   notification strategies.
-2. **Reduce geographic concentration risk** — 58.7% US dependency is 
-   a business risk. Target high-engagement smaller markets 
-   (Australia, Canada, Netherlands) for growth.
-3. **Investigate Day 7-to-Day 30 drop** — The gap between D7 and D30 
-   data suggests significant churn in weeks 2-4. Map this to 
-   specific in-game progression events.
-4. **Focus on high-engagement low-user markets** — Segmentation 
-   identified countries with strong engagement but small user bases — 
-   these are cost-effective growth targets.
+1. Improve daily retention loop - DAU/MAU of 0.063 indicates players are not returning daily. Investigate daily reward systems and push notification strategies.
 
----
+2. Reduce geographic concentration risk - 58.7% US dependency is a business risk. Target high-engagement smaller markets such as Australia, Canada, and Netherlands for growth.
 
+3. Investigate Day 7 to Day 30 drop - The gap between D7 and D30 data suggests significant churn in weeks 2 to 4. Map this to specific in-game progression events.
+
+4. Focus on high-engagement low-user markets - Segmentation identified countries with strong engagement but small user bases. These are cost-effective growth targets.
 
 ---
 
@@ -119,4 +100,4 @@ Python, SQL, and data visualization.
 
 Mohammed Shahwar Ahmed
 Data Analytics | Game Intelligence | SQL | Python | Power BI
-GitHub: https://github.com/shahwar-analytics
+GitHub: https://github.com/ahmedshahwar786
